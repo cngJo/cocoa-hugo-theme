@@ -5,14 +5,14 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', '{{ .Site.ParmsgoogleAnalytics }}', 'auto');
+ga('create', '{{ .Site.Parms.googleAnalytics }}', 'auto');
 ga('set', 'anonymizeIp', true);
 ga('send', 'pageview');
 </script>
 <!-- End Google Analytics -->
 
 <script>
-var gaProperty = '{{ .Site.ParmsgoogleAnalytics }}';
+var gaProperty = '{{ .Site.Parms.googleAnalytics }}';
 var disableStr = 'ga-disable-' + gaProperty;
 if (document.cookie.indexOf(disableStr + '=true') > -1) {
 window[disableStr] = true;
