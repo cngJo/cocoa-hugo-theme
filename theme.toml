@@ -8,5 +8,5 @@ features    = ["blog", "responsive", "404", "icons", "disqus", "metadata"]
 min_version = 0.26
 
 [author]
-  name      = "Nishanth Shanmugham"
+  name      = "Nishanth Shanmugham (edited by Johannes Stephan Przymusinski)"
   homepage  = "https://github.com/nishanths"
