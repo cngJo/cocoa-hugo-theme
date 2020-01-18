@@ -34,6 +34,33 @@
                     {{ end }}
                 </ul>
             </nav>
+            {{ if $.Site.Home.AllTranslations }}
+                <div>
+                    <style>
+                        .language-list {
+                            margin-top: 10px;
+                            list-style-type: none;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            font-size: 9pt;
+                        }
+                        .language-list li {
+                            padding-right: 5px;
+                        }
+                        .language-list a {
+                            color: #444;
+                        }
+                    </style>
+                    <ul class="language-list">
+                        {{ range $.Site.Home.AllTranslations }}
+                            <li>
+                                <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                            </li>
+                        {{ end }} 
+                    </ul>
+                </div>
+            {{ end }}
         </div>
     </div>
 </section>
