@@ -1,5 +1,7 @@
 <!-- Google Analytics -->
-{{ partial "google_analytics.html" . }}
+{{ id .Site.Params.googleAnalytics }}
+  {{ partial "google_analytics.html" . }}
+{{ end }}
 
 {{ if .Site.Params.highlightjs }}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
